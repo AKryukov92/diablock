@@ -1,0 +1,5 @@
+minetest.register_on_joinplayer(function(player)
+	local pos=player:get_pos()
+	player:set_pos({x=pos.x,y=pos.y,z=0})
+	player:set_eye_offset({x=0,y=15,z=5},{x=0,y=15,z=5})
+end)
